@@ -55,6 +55,12 @@
       outDir: 'dist',
     },
     server: {
+      proxy: {
+        '/api': {
+          target: 'http://localhost:3000','https://college-website-iota-jet.vercel.app',
+          changeOrigin: true,
+        },
+      },
       port: 3000,
       open: true,
     },
