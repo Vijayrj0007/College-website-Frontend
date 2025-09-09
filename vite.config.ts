@@ -57,7 +57,7 @@
     server: {
       proxy: {
         '/api': {
-          target: 'http://localhost:3000','https://college-website-iota-jet.vercel.app',
+          target: 'https://college-website-iota-jet.vercel.app',
           changeOrigin: true,
         },
       },
